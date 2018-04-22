@@ -61,6 +61,7 @@ a {
 
 .left-column {
   width: 630px;
+  flex-direction: column-reverse;
 }
 
 .left-column .story-one .headline {
@@ -73,40 +74,45 @@ a {
 .left-column .story-five,
 .left-column .story-two,
 .left-column .story-four {
+  width: 310px;
+  margin: 0px;
+}
+
+.left-bottom{
   display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 582px;
   flex-wrap: wrap;
-  flex-direction: row;
-  width: 300px;
+  justify-content: flex-end;
 }
 
-.left-column .story-four {
-  order: 2;
-  display: flex;
-}
-
-.left-column .story-two {
-  order: 1;
-  display: flex;
+h1 {
+  font-size: 30px
 }
 
 .left-column .story-three .headline {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
   text-align: center;
-  order: 3;
+  width: 290px;
 }
 
 .left-column .story-five .headline {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
-  order: 4;
-
+  width: 290px;
 }
 
 .headline {
+  display: flex;
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
   color: white;
-  height: 300px
+  height: 300px;
+  text-align: center;
+  margin-top: 15px;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .middle-column {
@@ -135,4 +141,58 @@ a {
   display: flex;
   flex-wrap: wrap;
   height: 215px;
+}
+
+.news-bites .bites{
+  background-color: WhiteSmoke;
+  font-family: "Verdana", sans-serif;
+  font-size: 12px;
+  color: DimGray;
+  }
+
+.news-bites h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.news-bites p{
+  display: block;
+  border-bottom: 1px solid black;
+  padding: 10px 30px;
+  margin: 0px;
+}
+
+footer {
+  display: flex;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: "Verdana", sans-serif;
+  font-size: 12px;
+  height: 350px;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer .title {
+  display: inline-block;
+  color: White;
+  font-family: "Georgia", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  border-right: 2px solid white;
+  padding-right: 20px;
+}
+
+.footer nav {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.footer-copyright {
+  padding-top: 10px;
+  padding-left: 10px;
 }
